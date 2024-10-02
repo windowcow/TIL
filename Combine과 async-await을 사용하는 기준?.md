@@ -43,7 +43,7 @@ let issues = await repository.fetch()
 
 생산자를 `issues: [Issue]`를 프로퍼티로 가지는 `Repository`라고 가정합시다. 어떻게 소비자들인 `ViewController`들에게 전달할 수 있을까요?
 
-> **주의**: 사실 Combine에서 producer의 역할은 `Publisher`이고 consumer은 `Subscriber`입니다. `Repository`나 `ViewController`는 각각 producer/consumer라기보다는 그걸 관리하는 쪽에 가깝다고 생각합니다.
+> 사실 Combine에서 producer의 역할은 `Publisher`이고 consumer은 `Subscriber`입니다. `Repository`나 `ViewController`는 각각 producer/consumer라기보다는 그걸 관리하는 쪽에 가깝다고 생각합니다.
 
 물론 다음 코드처럼 레포지토리가 뷰 컨트롤러들의 참조를 가지면 주도적으로 데이터 스트림을 시작할 수 있습니다.
 
@@ -146,7 +146,7 @@ let cancellable = publisher
 
 반환값을 가지는 비동기 함수라는 점에서 async/await에서 말하는 `동기 코드처럼 보이는 비동기 코드`와 닮아있습니다. 기존의 `DispatchQueue`와 completion handler를 이용한 비동기 함수는 반환값을 가질 수 없었으니까요.
 
-> **참고**: Combine이 2019년에, Swift Concurrency가 2021년에 나왔습니다.
+> Combine이 2019년에, Swift Concurrency가 2021년에 나왔습니다.
 
 실제로 Combine이 나온 시점에는 async/await이 없었기 때문에, 저런 코드를 통해서 `DispatchQueue`나 completion handler를 사용하지 않고 비동기 함수의 반환값을 절차적으로 처리할 수 있게 되었습니다.
 
