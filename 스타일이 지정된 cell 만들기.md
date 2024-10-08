@@ -11,7 +11,7 @@
 2. **static** **var** identifier: String
 3. **func** configure(title: String, description: String)
 
-#### **override** **init**(style: UITableViewCell.CellStyle, reuseIdentifier: String?)
+# **override** **init**(style: UITableViewCell.CellStyle, reuseIdentifier: String?)
 ```swift
 override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 	super.init(style: .value2, reuseIdentifier: reuseIdentifier)
@@ -57,7 +57,7 @@ override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 
 위에서 적은 것처럼 `override init` 안의 `super.init`에 스타일에 관한 인자를 넘겨줘야 `dequeueReusableCell`을 통해 원하는 스타일의 셀을 생성할 수 있다.
 
-### 요약
+# 요약
 - style 지정은 생성자에서만 가능하다.
 - 하지만 생성자를 내가 명시적으로 호출하지 않는 상황이 많다.
 - tableView.dequeueReusableCell(withIdentifier:for: ) 여기가 특히 그렇다.
@@ -70,7 +70,7 @@ override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 }
 ```
 
-#### 다음은 완성된 코드와 결과물이다.
+# 다음은 완성된 코드와 결과물이다.
 
 ```swift
 // Tabl
