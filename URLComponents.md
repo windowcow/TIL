@@ -13,9 +13,13 @@ https://www.example.com/path?key1=value1&key2=value2#section1
 URL은 `스킴://호스트:포트/경로?쿼리#프래그먼트`로 구성 요소를 구분할 수 있다.
 
 • **스킴 (Scheme)**: https
+
 • **호스트 (Host)**: www.example.com
+
 • **경로 (Path)**: /path
+
 • **쿼리 (Query)**: key1=value1&key2=value2
+
 • **프래그먼트 (Fragment)**: section1
 
 `URLComponents`를 사용하면 각각의 요소에 바로 접근해서 읽고 쓸 수 있다.
