@@ -9,6 +9,7 @@ URL은 여러가지의 구성 요소로 나뉘고 그 구성 요소들을 추가
 하지만 URL 타입 자체로 그 요소들을 다루는 데에는 한계가 있다.
 
 예를 들어서 다음 URL을 살펴보자.
+
 `https://www.example.com/path?key1=value1&key2=value2#section1`
 
 URL은 `스킴://호스트:포트/경로?쿼리#프래그먼트`로 구성 요소를 구분할 수 있다.
